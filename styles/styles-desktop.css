@@ -17,32 +17,32 @@ body {
 .big-frame {
     background-color: hsl(0, 0%, 100%);
     height: 510px;
-    width: 922;
+    width: 922px;
     border-radius: 22px;
     display: flex;
     justify-content: space-between;
 }
 
-.left-side {
+.images-div {
     width: 50%;
     background-image: url(/images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-position: 120% 67%;
+    background-position: 115% 70%;
 }
 
 .desktop-img {
     position: relative;
-    left: -15%;
+    left: -18%;
     top: 10%;
 }
 
 .box-img {
     position: relative;
-    left: -18%;
+    left: -20%;
     bottom: 35%;
 }
 
-.right-side {
+.accordion-div {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -57,6 +57,9 @@ body {
 
 .accordion {
     width: 400px;
+    --bs-accordion-active-bg: white;
+    --bs-accordion-btn-focus-border-color: white;
+    --bs-accordion-btn-icon-width: 10px;
 }
 
 .accordion-header {
@@ -78,6 +81,53 @@ body {
     font-weight: 400;
     color: hsl(240, 6%, 50%);
     padding: 15px 0;
+}
+
+@media (max-width: 922px){
+
+    .big-frame {
+        height: 535px;
+        width: 328px;
+        flex-direction: column;
+    }
+    .images-div {
+        width: 100%;
+        height: 122px;
+        background-image: url(/images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 45% 0;
+    }
+
+    .desktop-img {
+        width: 240px;
+        left: 13%;
+        top: -90%;
+    }
+
+    .box-img {
+        opacity: 0;
+    }
+
+    .accordion-div {
+        width: 100%;
+        height: 413px;
+    }
+
+    .faq {
+        margin: 0 auto;
+    }
+    
+    .accordion {
+        width: 285px;
+        margin: auto;
+        margin: 10px auto;
+    }
+
+    .accordion-button {
+        font-size: 14px;
+    }
+
+    
 }
 
 .attribution {
