@@ -31,6 +31,10 @@ Users should be able to:
 This is an almost finished project. there are few more things to add, like some style changes when accordion expandes. maybe some tweaks to some of the paadings and margins in the design.
 An issue I'm facing is changing the accordion arrow color, can't find how to do it. will continue to investigate.
 
+25/11/22 update:
+
+This is as far as I will go for now, fixed many style issues but still can't figure the accordion arrow.
+
 ### Screenshot
 
 ![](./images/faq-accordion-scrrenshot.png?raw=true)
